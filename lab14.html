@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/w4Wr6NM/Screenshot-20240716-180901-Instagram-removebg-preview.png">
+    <link rel="stylesheet" type="text/css" href="styles.css"/> 
+</head>
+<body>
+    <h1><span class="username" id="username">Aukkaraphol Areedach 67070298</span>'s Phone Book</h1>
+    <div class="avatar" id="avatar">
+        <div class="notification">1</div>
+    </div>
+    <div>
+        <label for="usernameInput">Set the Username</label>
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <button onclick="setUsername()">SET</button>
+    </div>
+    <div>
+        <label for="avatarInput">Set the proflie image URL</label>
+        <input type="text" id="avatarInput" placeholder="Enter Image URL">
+        <button onclick="setAvatar()">SET</button>
+    </div>
+    <h3>Phone Number List</h3>
+    <div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="tel" id="phoneInput" placeholder="Tel">
+        <button onclick="addContact()">ADD</button>
+        <button onclick="exportContacts()">EXPORT</button>
+    </div>
+    <table id="contactTable">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
